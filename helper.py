@@ -11,6 +11,7 @@ categories_dict = {
     'society':4, 
     'world':5, 
     'religion':6, 
+    'politic':7,
 }
 
 ### Tools
