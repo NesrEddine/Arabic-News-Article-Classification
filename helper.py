@@ -100,7 +100,7 @@ class Helper():
     # Main function, predict content category
     def predict(self, content):
         article = self.pipeline(content)
-        model, cv, tfidf = self.getModel('sgd_94')
+        model, cv, tfidf = self.getModel('naive_bayes_89')
         vectorized = tfidf.transform(cv.transform([article]))
         predicted = model.predict(vectorized)
         keys = list(categories_dict.keys())
